@@ -1,0 +1,57 @@
+/*Make the table take up 100% of the width*/
+
+
+
+.legend {
+	width: 100%;
+	text-align: center;
+}
+
+
+/*Keep each header in the legend to 30% width for formatting equality*/
+.legend th {
+	width: 30%;
+	border: 2px solid black;
+}
+
+
+/*Standings is the same table as legend*/
+/*To access the rankings use .standings tr or .standings td*/
+.standings tr {
+	border: 1px solid black;
+}
+
+.standings tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+.standings tr:nth-child(odd) {
+	background-color: darkgray;
+}
+
+/*Pagination Menu*/
+
+/*Set the pagination table row to 100% width*/
+.pagination-table {
+	margin: auto;
+	width: 25%;
+	text-align: center;
+
+}
+
+.pagination-table td {
+}
+
+.pagination-table a {
+	padding: 0px 2px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+/*Make the active nav number differentiated somehow*/
+/*Currently bold, but doesn't make much difference*/
+/*TODO slightly different color once final styling colors are set*/
+.pagination-table .active-nav {
+	font-weight: bold;
+}

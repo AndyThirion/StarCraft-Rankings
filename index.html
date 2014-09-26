@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StarCraft Ownage Standings</title>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<div class="body-wrapper">
+		
+		<div class="header">
+			<h1>StarCraft Ownage Player Standing</h1>
+		</div>
+
+		<div class="sort-by">
+			<p>
+			Sort By: <select name="sort-by" id="sort-by">
+				<option value="Username">Username</option>
+				<option value="Score">Score</option>
+				<option value="Win%">Win %</option>
+				<option value="Wins">Wins</option>
+				<option value="Race">Race</option>
+				<option value="Region">Region</option>
+			</select>
+			</p>
+		</div>
+
+		<!-- The table header that explains what each field is -->
+		<div class="table-wrapper">
+			<table class="legend standings">
+				<tr>
+					<th>Player</th>
+					<th>Region</th>
+					<th>Score</th>
+				</tr>
+				<tr>
+					<td>derlicious</td>
+					<td>USA</td>
+					<td>infinity</td>
+				</tr>
+				<tr>
+					<td>JynxxMaze</td>
+					<td>USA</td>
+					<td>infinity - 1</td>
+				</tr>
+				<tr>
+					<td>Ai Kami Aien</td>
+					<td>USA</td>
+					<td>lots</td>
+				</tr>
+				<tr>
+					<td>Faker-Senpai</td>
+					<td>KOR</td>
+					<td>All of the points</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="pagination-wrapper">
+			
+			<!-- First, prev, active page, next, and last will be here by default -->
+			<!-- Will automatically populate 4 more page # data cells based on which -->
+			<!--    page is currently active -->
+			<table class="pagination-table">
+				<tr>
+					<td><a href="#"><i class="fa fa-angle-double-left"></i></a></td>
+					<td><a href="#"><i class="fa fa-angle-left"></i></a></td>
+					<!-- <td class="pagination-num active-nav"><a href ="#">1</a></td> -->
+					<td><a href="#"><i class="fa fa-angle-right"></i></a></td>
+					<td><a href="#"><i class="fa fa-angle-double-right"></i></a></td>
+				</tr>
+			</table>
+
+		</div>
+
+		
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src ="node_modules/underscore/underscore-min.js"></script>
+	<script src="dummyData.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>

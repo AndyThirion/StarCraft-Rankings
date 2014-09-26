@@ -1,0 +1,49 @@
+Dev notes
+
+Write a player ranking page for a StarCraft tournament community. The focus of the page is a large data table that displays statistics about tournament players, and provides tools for sorting and filtering the data. Use included dummyData object
+
+Use underscore to perform any data manipulation. It will also come in handy for generating the statistics panel on Step 3
+
+
+Skill usage:
+
+1. HTML Table
+2. DOM manip
+3. Design/UI/UX
+4. Functional Programming with Underscore
+5. Higher Order Programming
+
+
+Specs
+
+1. Pagination
+	a. Basic Pagination Control
+		1. 20 players per page
+		2. next, previous, first, and last buttons in addition to numbers 1-10
+			i) use fontawesome icons for this
+	b. Dynamic Labels
+		1. If sorted by name (a-z)
+		2. If sorted by games played (1000+, 750-999, etc)
+2. Filter
+	a. Add a form that allows the user to filter the table data by different fields, such as name and games played. Decide which UI component (text input, dropdown, slider, etc) makes sense for each field
+3. Statistics
+	a. Render a panel above the table that displays overall statistics:
+		1. Total players
+		2. Games played
+		3. Race popularity
+
+-------------------------------------------------------------------------------------------
+
+TODO
+
+Add auto population of data from playerList
+Add sorting algorithms that remove and repopulate data sorted appropriately
+Style page
+	player data should be smooth border radiused oblong bubbles
+	overall page styling should be fairly minimalist
+	Consider adding profile pic thumbnails and region flags before player name
+	
+
+CLASSES
+
+pagination-num: class for jquery generated pagination numbers (td wrapper, not just the a)
